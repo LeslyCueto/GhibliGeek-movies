@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Manrope:wght@200..800&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Manrope", sans-serif !important;
+    background-image: url('./assets/images/ghibli-background.jpg');
+    
+}
+
+.navbar {
+    background-color: #78a0454a;
+    height: 4.5em;
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.logo-ghibli-img {
+    width: 110px;
+    height: 60px;
+    margin-right: 10px;
+}
+
+.container-main {
+    justify-content: space-between;
+    padding: 2em;
+    margin-top: 7em !important;
+    margin: 2em;
+    justify-content: center;
+}
+
+.container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+
+.card-alldescription{
+    width: 100%;
+    flex-direction: column;
+    color: #fff;
+}
+
+.card-buttons{
+    justify-content: center;
+    margin-top: 1em;
+}
+
+.btn{
+    margin-right: 4em;
+
+}
+
+.btn, 
+.btn-limpiar{
+    background-color: #d79e2d !important;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    border: none !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.container-cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    justify-content: center;
+    text-align: center;
+}
+
+.container-cards .card{
+    background-color: #fff;
+    color: #fff;
+    border-radius: 1em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #9b8090ac;
+    justify-content: space-between;
+}
+
+.card-image{
+    /*all the images card, with rounded borders y un margin bottom=1em*/
+    border-radius: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+    object-fit: cover;
+    
+}
+
+.card-img{
+    object-fit: cover;
+}
+
+.card-title{
+    font-size: 1em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.card-description,
+.card-director{
+    font-size: 0.8em;
+    margin-bottom: 1em;
+}
+
+.btn-card{
+    background-color: #016179;
+    font-size: 0.8em;
+    color: #fff;
+    padding: 0.5em 1em;
+    border: none;
+    border-radius: 0.5em;
+    cursor: pointer;
+    font-weight: bold;
+}
+.container-footer {
+    background-color: #0000009a;
+    text-align: center;
+    width: 100%;
+    /* Eliminar el margen superior */
+    margin: 0; 
+    /* Asegurarse de que el footer esté al final del contenido */
+    padding: 1em 0; /* Puedes ajustar el padding según sea necesario */
+}
+
+.footer-text {
+    color: #fff;
+    text-align: center;
+    font-size: 1em !important;
+}
+
+/* media query for desktop devices */
+@media screen and (min-width: 1024px) {
+    .container-main {
+        display: grid;
+        flex-wrap: wrap;
+        padding: 0 10px;
+        margin-top: 3em;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    
+    .container-form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 5em;
+    }
+
+    .container-cards{
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 1em;
+        margin-top: 20px;
+    }
+ 
+}
